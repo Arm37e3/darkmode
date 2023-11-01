@@ -95,9 +95,14 @@ img{
  text-align: center;   
 }
 .social-icon i{
-    display: flex;
-    flex-direction: row;
  font-size: 100px;
  padding: 25px;
     
+}
+.contectmenu{
+    display: flex;
+    flex-direction: row;
+    min-width: 100vb;
+    justify-content: center;
+    align-items: center;
 }
