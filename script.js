@@ -10,10 +10,33 @@ const img3 = document.querySelector('#img3')
 
 function switchmode(e){
     if(e.target.checked){
-            console.log("Night Mode")
+            NightMode();
+            ImageMode('nigth');
+            document.documentElement.setAttribute('data-theme','dark')
     }else {
-            console.log("Day Mode")
+            DayMode();
+            ImageMode('day');
+            document.documentElement.setAttribute('data-theme','light')
     }
 }
 
 Switchtoggle.addEventListener('change', switchmode);
+
+function NightMode(){
+        toggleicon.children[0].textContent = "โหมดกลางคืน ";
+        toggleicon.children[1].classList.replace('fa-sun', 'fa-moon')
+        nav.style.backgroundColor = "#041353"
+        ImageMode('nigth')
+}
+
+function DayMode(){
+        toggleicon.children[0].textContent = "โหมดกลางวัน ";
+        toggleicon.children[1].classList.replace('fa-moon', 'fa-sun')
+        nav.style.backgroundColor = "#3053ee"
+        ImageMode('day')
+}
+function ImageMode(x){
+        img1.src =`Img/web-${x}.svg `
+        img2.src =`Img/mobile-${x}.svg `
+        img3.src =`Img/net_${x}.svg `
+}

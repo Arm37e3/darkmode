@@ -7,7 +7,7 @@
     --box-shadow:5px 20px 1px  #000000;
 }
 [data-theme="dark"]{
-    --primary-color: s;
+    --primary-color: black;
     --text-color: white;
     --text-color-second: #F5E8B7;
     --background:#232D3F;
@@ -135,7 +135,8 @@ img{
     position: relative;
     top: -4ox;
     right: 5px;
-    color:  #0077ff;
+    font-size: 20px;
+    color: #edd2a4 Bol;
 }
 .theme-switch{
     display:inline-block ;
@@ -181,4 +182,14 @@ img{
 }
 input:checked+ .slider::before{
     transform: translateX(26px);
+}
+.fa-sun{
+    color: orange;
+    font-size: 25px ;
+    
+}
+.fa-moon{
+    color: orange;
+    font-size: 25px ;
+    
 }
