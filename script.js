@@ -1,6 +1,6 @@
 
-//const Switchtoggle = React.querySelector('input[type="checkbox"]');
-const Switchtoggle = document.querySelector('#sw');
+// const Switchtoggle = React.querySelector('input[type="checkbox"]');
+ const Switchtoggle = document.querySelector('#toggle');
 const toggleicon = document.querySelector("#toggle-icon");
 const nav = document.querySelector('#nav');
 const img1 = document.querySelector('#img1')
@@ -24,14 +24,14 @@ Switchtoggle.addEventListener('change', switchmode);
 
 function NightMode(){
         toggleicon.children[0].textContent = "โหมดกลางคืน ";
-        toggleicon.children[1].classList.replace('fa-sun', 'fa-moon')
+        // toggleicon.children[1].classList.replace('fa-sun', 'fa-moon')
         nav.style.backgroundColor = "#041353"
         ImageMode('nigth')
 }
 
 function DayMode(){
         toggleicon.children[0].textContent = "โหมดกลางวัน ";
-        toggleicon.children[1].classList.replace('fa-moon', 'fa-sun')
+        // toggleicon.children[1].classList.replace('fa-moon', 'fa-sun')
         nav.style.backgroundColor = "#3053ee"
         ImageMode('day')
 }
